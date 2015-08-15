@@ -1,0 +1,37 @@
+.track {
+	max-width:1000px;
+	margin:10px auto;
+}
+
+.grid {
+  float: center;
+  width: 80%;
+  margin-left: 5%;
+}
+
+table {
+  margin: auto;
+}
+
+table tr td {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border: 2px solid #ccc;
+}
+
+.trackLabel {
+	font-size: medium
+}
+
+.player1Border {
+  border-color: blue;
+}
+
+.player2Border {
+  border-color: red;
+}
+
+.playerSquare {
+  background: Chartreuse ;
+}
