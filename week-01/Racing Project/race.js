@@ -21,10 +21,12 @@ $(document).ready(function() {
 				playerTwoLocation=playerTwoLocation+1;
 				
 			}
-			console.log(playerOneLocation);
-			console.log(playerTwoLocation);
-			if ((playerOneLocation === trackLength) || (playerTwoLocation === trackLength)) {
-			announceWinner(playerOneLocation,playerTwoLocation,trackLength);
+			console.log("player1 location:"+playerOneLocation);
+			console.log("player2 location:"+playerTwoLocation);
+			
+			if (((playerOneLocation === trackLength)&&(playerTwoLocation<trackLength)) 
+				|| (playerTwoLocation === trackLength)&&(playerOneLocation<trackLength)) {
+			return announceWinner(playerOneLocation,playerTwoLocation,trackLength);
 		}
 		})
 })
